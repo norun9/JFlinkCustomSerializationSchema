@@ -18,8 +18,8 @@ public class Tuple2SerializationSchema implements SerializationSchema<Tuple2<Str
     public byte[] serialize(Tuple2<String, String> element) {
         try {
             ObjectNode node = objectMapper.createObjectNode();
-            node.put("f0", element.f0);
-            node.put("f1", element.f1);
+            node.put("topic", element.f0);
+            node.put("value", element.f1);
             return objectMapper.writeValueAsBytes(node);
         } catch (Exception e) {
             throw new RuntimeException("Failed to serialize element", e);
