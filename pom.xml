@@ -16,6 +16,7 @@
 
     <dependencies>
         <!-- Flink dependencies -->
+        <!-- Must be the same as the version of the PyFlink project you are using -->
         <dependency>
             <groupId>org.apache.flink</groupId>
             <artifactId>flink-core</artifactId>
