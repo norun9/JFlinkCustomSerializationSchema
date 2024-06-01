@@ -3,6 +3,7 @@
 2. Add the JAR File to PyFlink Environment:
    1. Place the built JAR file in the directory of the PyFlink project.
    2. Add the JAR file to the PyFlink environment using the `add_jars` method of the `StreamExecutionEnvironment` class. 
+   
       ```
       from pyflink.common import Configuration
       from pyflink.datastream import StreamExecutionEnvironment
