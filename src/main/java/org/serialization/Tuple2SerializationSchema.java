@@ -1,6 +1,5 @@
 package org.serialization;
 import org.apache.flink.api.common.serialization.SerializationSchema;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.flink.api.java.tuple.Tuple2;
 
 import java.nio.charset.StandardCharsets;
@@ -20,7 +19,7 @@ public class Tuple2SerializationSchema implements SerializationSchema<Tuple2<Str
             String value = element.f1;
             return value.getBytes(StandardCharsets.UTF_8);
         } catch (Exception e) {
-            throw new RuntimeException("Failed to serialize element", e);
+            throw new RuntimeException("Failed to serialize", e);
         }
     }
 }
