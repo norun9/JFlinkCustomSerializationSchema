@@ -1,3 +1,8 @@
+> [!CAUTION]
+> The Tuple2SerializationSchema class serializes the second element of the tuple as a String. 
+> It cannot be used for other purposes.
+
+
 1. Build Project:
 
 2. Add the JAR File to PyFlink Environment:
