@@ -4,6 +4,7 @@
 
 
 1. Build Project:
+   1. Please adjust the versions of `flink-core` and `flink-streaming-java` in the `pom.xml` to match the Flink version used in your PyFlink project.
 
 2. Add the JAR File to PyFlink Environment:
    1. Place the built JAR file in the directory of the PyFlink project.
